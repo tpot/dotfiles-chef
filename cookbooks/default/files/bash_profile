@@ -1,0 +1,6 @@
+# Managed by chef
+
+export PATH=$PATH:$HOME/bin
+
+# Source bash-completions config
+[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
