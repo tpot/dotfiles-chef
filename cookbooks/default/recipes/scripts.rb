@@ -11,7 +11,7 @@ directory "#{ENV['HOME']}/bin" do
   action :create
 end
 
-["findall", "findch"].each do |script|
+["findf", "findch"].each do |script|
   cookbook_file "#{ENV['HOME']}/bin/#{script}" do
     source "scripts/#{script}"
     mode 0755
