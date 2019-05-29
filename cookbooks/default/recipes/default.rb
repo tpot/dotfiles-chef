@@ -7,3 +7,7 @@
 include_recipe "default::chef-solo"
 include_recipe "default::bash"
 include_recipe "default::scripts"
+
+if node['platform'] == 'mac_os_x'
+  include_recipe "default::osx"
+end
