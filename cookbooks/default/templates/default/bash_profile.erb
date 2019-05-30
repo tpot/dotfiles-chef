@@ -1,6 +1,15 @@
-# Managed by chef
+# Managed by Chef
 
 export PATH=$PATH:$HOME/bin
+
+alias gs="git status"
+alias gap="git add -p"
+alias gd="git diff"
+alias gdc="git diff --cached"
+alias gl="git log --name-status --decorate"
+alias gc="git commit"
+alias glp="git log -p"
+alias ga="git add"
 
 <% if node['platform'] == 'mac_os_x' -%>
 # Source bash-completions config
